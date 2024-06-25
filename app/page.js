@@ -13,15 +13,15 @@ function Page() {
           delectable cuisine
         </span>
       </div>
-      <div className="bg-green-400 sm:h-[400px] h-[200px] grid">
-        <div className="sm:absolute left-0 sm:w-[100%] sm:h-[100%] sm:translate-x-[23rem] sm:translate-y-[-7rem]">
+      <div className="bg-green-400 sm:h-[400px] h-[200px] grid items-center justify-center relative">
+        <div className="sm:absolute sm:w-[150%] sm:h-[150%] ">
           <Image
             src={liwet}
             fill
             placeholder="blur"
             quality={100}
             alt="nasi liwet"
-            className="object-scale-down sm:object-contain"
+            className="object-scale-down sm:object-contain sm:translate-x-[-120px]"
           />
         </div>
       </div>

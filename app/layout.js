@@ -25,7 +25,7 @@ function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${montserrat.className} flex flex-col justify-center sm:items-center min-h-screen antialiased relative bg-cyan-700`}>
+        className={`${montserrat.className} flex flex-col justify-center item-center min-h-screen antialiased relative bg-cyan-700`}>
         <Image
           src={bg1}
           fill
@@ -36,7 +36,7 @@ function RootLayout({ children }) {
         />
         <Header />
         <div className="flex-1 grid px-2 py-3 sm:px-8 sm:py-12">
-          <main className="rounded-lg border border-secondary-100/35 backdrop-blur-md bg-secondary-100/30 sm:mx-auto sm:w-full h-full my-auto px-1 py-2 shadow xmax-w-7xl relative bg-gray-400">
+          <main className="rounded-lg border border-secondary-100/35 backdrop-blur-md bg-secondary-100/30 sm:mx-auto my-auto px-1 py-2 shadow max-w-7xl relative bg-gray-400">
             {children}
           </main>
         </div>
