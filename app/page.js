@@ -1,7 +1,31 @@
+import Image from "next/image";
+import liwet from "@/public/liwet.png";
+import SignatureDish from "./_components/SignatureDish";
+
 function Page() {
   return (
-    <div className="bg-primary-100  opacity-60 absolute inset-3 h-screen rounded-md text-primary-900 text-xl font-semibold">
-      home page haloo oooo ooo oooo ooo oooo ooooooo ooooo
+    <div className="bg-yellow-400 text-primary-900 grid sm:grid-cols-2 gap-3 items-center">
+      <div className=" bg-purple-400 px-3 py-2 flex flex-col gap-3 ">
+        <span className="text-5xl sm:text-7xl font-extrabold">Order Your</span>
+        <span className="text-3xl sm:text-5xl font-light">Favorite Foods</span>
+        <span className="text-sm sm:font-normal font-semibold sm:text-2xl ">
+          Experience the authentic flavors of Indonesia with our fresh and
+          delectable cuisine
+        </span>
+      </div>
+      <div className="bg-green-400 sm:h-[400px] h-[200px] grid">
+        <div className="sm:absolute left-0 sm:w-[100%] sm:h-[100%] sm:translate-x-[23rem] sm:translate-y-[-7rem]">
+          <Image
+            src={liwet}
+            fill
+            placeholder="blur"
+            quality={100}
+            alt="nasi liwet"
+            className="object-scale-down sm:object-contain"
+          />
+        </div>
+      </div>
+      <SignatureDish />
     </div>
   );
 }

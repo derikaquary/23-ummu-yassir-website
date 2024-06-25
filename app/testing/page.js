@@ -1,9 +1,8 @@
 function Page() {
   return (
-    <div className="h-screen bg-red-400 relative">
-      <main>
-        <div className="h-50 bg-green-400 absolute inset-3"></div>
-      </main>
+    <div className="bg-blue-400 grid grid-rows-[40px_1fr]">
+      <div className="bg-yellow-400">first</div>
+      <div className="bg-green-400">second</div>
     </div>
   );
 }
