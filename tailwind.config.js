@@ -31,6 +31,9 @@ module.exports = {
           100: "#f8f1e1",
         },
       },
+      backgroundImage: {
+        "main-bg": "url(/bg1.jpg)",
+      },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
       },

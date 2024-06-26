@@ -4,7 +4,15 @@ import Link from "next/link";
 
 function Logo() {
   return (
-    <div>logo</div>
+    <div className="bg-yellow-700 relative h-[73px] aspect-square ">
+      <Image
+        src={logo}
+        layout="fill"
+        placeholder="blur"
+        alt="Logo UMY"
+        className="object-cover"
+      />
+    </div>
   );
 }
 

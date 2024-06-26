@@ -23,21 +23,22 @@ export const metadata = {
 
 function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-full">
       <body
-        className={`${montserrat.className} flex flex-col justify-center item-center min-h-screen antialiased relative bg-cyan-700`}>
-        <Image
-          src={bg1}
-          fill
-          placeholder="blur"
-          quality={80}
-          alt="Indonesian food"
-          className="object-cover object-center z-[-1] filter blur"
-        />
+        className={`${montserrat.className}  h-full relative overflow-hidden  grid grid-rows-[1fr_7fr] antialiased`}>
+        <div className="absolute inset-0 z-[-1] ">
+          <Image
+            src={bg1}
+            layout="fill"
+            placeholder="blur"
+            alt="Indonesian food"
+            className="object-cover filter blur-lg"
+          />
+        </div>
         <Header />
-        <div className="flex-1 grid px-2 py-3 sm:px-8 sm:py-12">
-          <main className="rounded-lg border border-secondary-100/35 backdrop-blur-md bg-secondary-100/30 sm:mx-auto my-auto px-1 py-2 shadow max-w-7xl relative bg-gray-400">
-            {children}
+        <div className="px-8 py-4">
+          <main className="bg-purple-400 sm:mx-auto sm:my-auto sm:max-w-7xl">
+            this is main
           </main>
         </div>
       </body>
