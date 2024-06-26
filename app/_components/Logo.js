@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function Logo() {
   return (
-    <div className="bg-yellow-700 relative h-[73px] aspect-square ">
+    <div className="relative h-[73px] aspect-square ">
       <Image
         src={logo}
         layout="fill"

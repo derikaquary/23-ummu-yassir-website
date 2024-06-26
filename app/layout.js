@@ -25,7 +25,7 @@ function RootLayout({ children }) {
   return (
     <html lang="en" className="h-full">
       <body
-        className={`${montserrat.className}  h-full relative overflow-hidden  grid grid-rows-[1fr_7fr] antialiased`}>
+        className={`${montserrat.className}  h-full relative overflow-hidden  grid grid-rows-[auto_1fr] antialiased`}>
         <div className="absolute inset-0 z-[-1] ">
           <Image
             src={bg1}
@@ -36,9 +36,9 @@ function RootLayout({ children }) {
           />
         </div>
         <Header />
-        <div className="px-8 py-4">
-          <main className="bg-purple-400 sm:mx-auto sm:my-auto sm:max-w-7xl">
-            this is main
+        <div className="overflow-auto sm:overflow-visible px-8 py-4">
+          <main className="sm:mx-auto sm:my-auto sm:max-w-7xl text-primary-900 bg-secondary-400/50 ">
+            {children}
           </main>
         </div>
       </body>
