@@ -10,8 +10,6 @@ const montserrat = Montserrat({
 
 import "@/app/_styles/globals.css";
 
-console.log(montserrat);
-
 export const metadata = {
   title: {
     template: "%s / Ummu Yasir",
@@ -36,7 +34,7 @@ function RootLayout({ children }) {
           />
         </div>
         <Header />
-        <div className="overflow-auto sm:overflow-visible px-8 py-4">
+        <div className="overflow-auto px-8 py-4">
           <main className="sm:mx-auto sm:my-auto sm:max-w-7xl text-primary-900 bg-secondary-400/50 rounded-lg">
             {children}
           </main>
